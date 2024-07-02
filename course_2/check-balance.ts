@@ -1,5 +1,5 @@
 import "dotenv/config"
-import { Connection, LAMPORTS_PER_SOL, PublicKey, clusterApiUrl } from "@solana/web3.js"
+import { Connection, LAMPORTS_PER_SOL, clusterApiUrl } from "@solana/web3.js"
 import { airdropIfRequired, getKeypairFromEnvironment } from "@solana-developers/helpers"
 
 const connection = new Connection(clusterApiUrl("devnet"))
