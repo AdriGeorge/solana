@@ -134,11 +134,10 @@ async function main() {
   const nft = await createNft(metaplex, uri, nftData);
   // const nftAddress = '4Te3y6pq4QBhwnMjgPjPEaiY4iQB6jbSEDoBw26byUvH';
 
-  // BONUS: Update an existing NFT
-  // 1. upload updated NFT data and get the new URI for the metadata
+  // upload updated NFT data and get the new URI for the metadata
   const updatedUri = await uploadMetadata(metaplex, updateNftData);
 
-  // 2. update the NFT using the helper function and the new URI from the metadata
+  // update the NFT using the helper function and the new URI from the metadata
   // await new Promise(resolve => setTimeout(resolve, 5000));
   await updateNftUri(metaplex, updatedUri, nft.address);
 }
