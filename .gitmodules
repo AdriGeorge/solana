@@ -1,0 +1,3 @@
+[submodule "course_9/escrow_project"]
+	path = course_9/escrow_project
+	url = https://github.com/AdriGeorge/solana-escrow.git
